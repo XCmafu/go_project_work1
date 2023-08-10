@@ -4,7 +4,7 @@ package storage
 import (
 	"bufio"
 	"fmt"
-	"github.com/XCmafu/go_project_work1/models"
+	"github.com/XCmafu/go_project_work1/internal/models"
 	"os"
 	"strconv"
 	"strings"

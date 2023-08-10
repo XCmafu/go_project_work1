@@ -1,4 +1,4 @@
-module gocode/project_work1
+module github.com/XCmafu/go_project_work1
 
 go 1.20
 
