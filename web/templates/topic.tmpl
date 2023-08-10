@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ .topic.Title }}</title>
+</head>
+<body>
+    <h1>帖子标题： {{ .topic.Title }}</h1>
+    <p>{{ .topic.Content }}</p>
+    <hr>
+    <h2>评论列表</h2>
+    <ul>
+        {{ range .posts }}
+            <li>{{ .Content }}</li>
+        {{ end }}
+    </ul>
+    <hr>
+    <h2>发布新的评论</h2>
+    <form action="/post" method="post">
+        <input type="hidden" name="topic_id" value="{{ .topic.ID }}">
+        <label for="content">内容:</label>
+        <textarea name="content" id="content" rows="4" required></textarea><br>
+        <input type="submit" value="发布评论">
+    </form>
+    <br>
+    <a href="/">返回帖子列表</a>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Topics</title>
+</head>
+<body>
+    <h1>帖子列表</h1>
+    <ul>
+        {{ range .topics }}
+            <li><a href="/topic/{{ .ID }}">{{ .Title }}</a></li>
+        {{ end }}
+    </ul>
+    <hr>
+    <h2>创建新帖子</h2>
+    <form action="/topic" method="post">
+        <label for="title">标题:</label>
+        <input type="text" name="title" id="title" required><br>
+        <label for="content">内容:</label>
+        <textarea name="content" id="content" rows="4" required></textarea><br>
+        <input type="submit" value="发布帖子">
+    </form>
+</body>
+</html>
