@@ -2,8 +2,8 @@
 package main
 
 import (
+	"github.com/XCmafu/go_project_work1/internal/handlers"
 	"github.com/gin-gonic/gin"
-	"gocode/project_work1/internal/handlers"
 )
 
 func main() {

@@ -2,9 +2,9 @@
 package handlers
 
 import (
+	"github.com/XCmafu/go_project_work1/internal/models"
+	"github.com/XCmafu/go_project_work1/internal/storage"
 	"github.com/gin-gonic/gin"
-	"gocode/project_work1/internal/models"
-	"gocode/project_work1/internal/storage"
 	"net/http"
 	"strconv"
 )
